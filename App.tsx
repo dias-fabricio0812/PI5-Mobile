@@ -1,9 +1,14 @@
 import React from 'react'
 import { View, Text, Image, Button, TouchableOpacity, StyleSheet } from 'react-native'
+import LinearGradient  from 'react-native-linear-gradient'
 
 export default function App(){
   return(
-    <View style={styles.container}>
+    <LinearGradient 
+      colors={['#000', '#0066FF']}
+      start={{ x: 0, y: 0 }}
+      end={{ x: 0, y: 1 }}
+      style={styles.container}>
       <Image
         style={styles.image}
         source={require('./assets/reactLogo.png')}
@@ -28,19 +33,19 @@ export default function App(){
       <TouchableOpacity style={styles.registerButton}>
         <Text style={[styles.text, styles.register]}>Sem cadastro? Registre-se!</Text>
       </TouchableOpacity>
-    </View>
+    </LinearGradient>
   )
 }
 
 const styles = StyleSheet.create({
   container:{
-    backgroundColor: '#0066ff',
     flex: 1,
     alignItems: 'center'
   },
   image:{
-    width: 300,
-    height: 300
+    width: 270,
+    height: 270,
+    marginTop: 40
   },
   title:{
      fontSize: 55,
