@@ -37,4 +37,4 @@ Siga as instruções simples no README para configurar e executar o aplicativo n
 ```npx react-native run-android```
 
 ## Funcionalidades
-```Tela de Boas-Vindas: Descreva brevemente o que os usuários podem esperar ao abrir o aplicativo pela primeira vez.```
+- **Tela de Boas-Vindas:** Descreva brevemente o que os usuários podem esperar ao abrir o aplicativo pela primeira vez.
